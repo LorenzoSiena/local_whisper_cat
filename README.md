@@ -13,7 +13,7 @@ In the settings panel you can set the location of the container and the audio_ke
 
 Should be agnostic but in practice I am referring to [Whisper ASR Webservice](https://github.com/ahmetoner/whisper-asr-webservice)
 
-## How to setup the plugin setting
+## How to setup the plugin settings
 
 Choose the url model
 
