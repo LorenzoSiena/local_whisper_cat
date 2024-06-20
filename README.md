@@ -3,6 +3,8 @@
 
 A plugin to transcript locally on your gpu/cpu, audio files to text.
 
+![logo](https://github.com/LorenzoSiena/local_whisper_cat/blob/main/local_whisper_cat_logo.png)
+
 ## How it works
 
 This plugin communicates with a local container running an api service to transcript audio files to text.
