@@ -29,7 +29,7 @@ like the next example:
         ",audio_name: 'msg45430839-160807.ogg',
         encodedBase64: True,
         }
-For convenience you can find a compatible Python client in this [repository](https://github.com/LorenzoSiena/chatty) in order to send 10 second audio in the right format.
+For convenience you can use a compatible Python client [Chatty!](https://github.com/LorenzoSiena/chatty) in order to send 10 second audio in the right format.
 
 Obviously you must have set the [nvidia-container-toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) and have an adequate video card
 
