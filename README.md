@@ -15,6 +15,21 @@ Should be agnostic but in practice I am referring to [Whisper ASR Webservice](ht
 
 ## How to setup
 
+Choose the url model
+
+    "http://openai-whisper-asr-webservice:9000" by default
+
+Choose an Audio key field for your Websocket message
+
+    "audio_key" by default
+
+Choose a language
+
+    "en" by default
+
+
+## How to send audio files
+
 Your client should send a message with the following fields: text, user_id, audio_key, audio_type, audio_name, encodedBase64. 
 
 The audio_key field should contain the base64 encoded audio file.
