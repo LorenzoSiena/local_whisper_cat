@@ -13,7 +13,7 @@ In the settings panel you can set the location of the container and the audio_ke
 
 Should be agnostic but in practice I am referring to [Whisper ASR Webservice](https://github.com/ahmetoner/whisper-asr-webservice)
 
-## How to setup
+## How to setup the plugin setting
 
 Choose the url model
 
@@ -28,7 +28,7 @@ Choose a language
     "en" by default
 
 
-## How to send audio files
+## How to send audio files to the Cat
 
 Your client should send a message with the following fields: text, user_id, audio_key, audio_type, audio_name, encodedBase64. 
 
