@@ -1,16 +1,20 @@
 # Local Whisper Cat
 [![awesome plugin](https://custom-icon-badges.demolab.com/static/v1?label=&message=awesome+plugin&color=F4F4F5&style=for-the-badge&logo=cheshire_cat_black)](https://)
+
 A plugin to transcript locally on your gpu/cpu, audio files to text.
 
 ## How it works
 
 This plugin communicates with a local container running an api service to transcript audio files to text.
-In the settings panel you can set the location of the container and the audio_key.
-Should be agnostic but in practice I am referring to https://github.com/ahmetoner/whisper-asr-webservice
+
+In the settings panel you can set the location of the container and the audio_key . 
+
+Should be agnostic but in practice I am referring to [Whisper ASR Webservice](https://github.com/ahmetoner/whisper-asr-webservice)
 
 ## How to setup
 
 Your client should send a message with the following fields: text, user_id, audio_key, audio_type, audio_name, encodedBase64. 
+
 The audio_key field should contain the base64 encoded audio file.
 like the next example:
 
@@ -27,12 +31,13 @@ For convenience you can find a compatible Python client in this [repository](htt
 
 Obviously you must have set the [nvidia-container-toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) and have an adequate video card
 
-
 Obviously you need a running container with whisper-asr-webservice
 
-##docker-compose example of a full local istance with ollama
+The accepted audio formats are: `mp3`, `wav`, `ogg`,`mpeg`, `mp4`(depending on the container settings).
 
-'''python
+# Example of a full local istance with ollama and nvidia container with docker-compose
+
+```yaml
 networks:
     fullcat-network:
 services:
@@ -66,7 +71,7 @@ services:
         restart: unless-stopped
         networks:
             - fullcat-network
-    
+            
     cheshire-cat-vector-memory:
         image: qdrant/qdrant:latest
         container_name: cheshire_cat_vector_memory
@@ -118,7 +123,5 @@ services:
         networks:
             - fullcat-network
 
-'''
+```
 
-
-The accepted audio formats are: `mp3`, `wav`, `ogg`,`mpeg`, `mp4`(depending on the container settings).
