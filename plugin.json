@@ -1,10 +1,10 @@
 {
-    "name": "My plugin",
-    "version": "0.0.1",
-    "description": "Description of my_plugin.",
-    "author_name": "Me",
-    "author_url": "https://mywebsite.me",
-    "plugin_url": "https://github.com/my_name/my_plugin",
-    "tags": "cat, template, example",
-    "thumb": "https://raw.githubusercontent.com/my_repo_path/my_plugin.png"
+    "name": "Local Whisper Cat",
+    "version": "1.0.0",
+    "description": "A plugin to transcript audio files to text locally using a container running whisper from open-ai. Add your audio to the websocket message and wait for the response! The accepted audio formats are: `mp3`, `wav`, `ogg`,`mpeg`, `mp4`(depending on the container settings).",
+    "author_name": "Lorenzo Siena",
+    "author_url": "https://github.com/LorenzoSiena",
+    "plugin_url": "https://github.com/LorenzoSiena/local_whisper_cat",
+    "tags": "cat, audio, transcript,local,recognition, openai, speech, text",
+    "thumb": "https://raw.githubusercontent.com/LorenzoSiena/local_whisper_cat/local_whisper_cat.png"
 }
